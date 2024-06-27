@@ -49,6 +49,8 @@ Si le premier caractère de Short_ID est 0 et que sa longeur est 6, on enlève l
 Si le premier caractère de Short_ID est 0 et que sa longeur est 5, on enlève le premier caractère. Puis...
 
 
+ et la segmentation selon le code greffe nous apporte aussi une économie appréciable de 3 chiffres...
+
 En définitive, la base segmentée des identifiants dans Chorus pèse 1 Mo, et, compressée, elle ne pèse que 410 Ko ! Le plus gros segment pèse environ 50 Ko ce qui est facilement gérable en mémoire même avec un script peu rapide comme VBS ou VBA sur Windows. Bien entendu, il faut segmenter l'identifiant à rechercher dans la base de la même façon. Il y a une donc une phase de pré-traitement algorithmique pour préparer la recherche.
 
 Les deux réutilisations de la base chorus (brut et segmentée) sont à disposition de tous sur le répertoire github.
